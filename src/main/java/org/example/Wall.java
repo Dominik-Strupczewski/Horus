@@ -14,8 +14,8 @@ public class Wall implements Structure {
     @Override
     public Optional<Block> findBlockByColor(String color) {
         if(blocks != null){
-            List<Block> allBlocks = new ArrayList<>() ;
-            allBlocks = ListOfAllStructureBlocks(blocks);
+            List<Block> allBlocks ;
+            allBlocks = listOfAllStructureBlocks(blocks);
             for(Block block : allBlocks)
             {
                 if(block.getColor().equals(color))
@@ -31,9 +31,16 @@ public class Wall implements Structure {
     @Override
     public List<Block> findBlocksByMaterial(String material) {
         List<Block> foundblocks = new ArrayList<>();
+        List<Block> allblocks ;
+        allblocks = listOfAllStructureBlocks(blocks);
         if (blocks != null) {
+                for(Block block : allblocks)
+                {
+                    if(block.getMaterial().equals(material)){
+                        foundblocks.add(block) ;
+                    }
+                }
 
-            foundblocks = findBlocksByMaterialRecursive(blocks, material);
         }
         return foundblocks;
     }
@@ -42,17 +49,17 @@ public class Wall implements Structure {
     @Override
     public int count() {
         if(blocks != null) {
-            return ListOfAllStructureBlocks(blocks).size();
+            return listOfAllStructureBlocks(blocks).size();
         }
         return 0 ;
 
     }
 
-    public List<Block> ListOfAllStructureBlocks(List<Block> blocks) {
+    public List<Block> listOfAllStructureBlocks(List<Block> blocks) {
         List<Block> ListOfBlocks = new ArrayList<>() ;
         for (Block block : blocks) {
             if (block instanceof CompositeBlock) {
-                    ListOfBlocks.addAll(ListOfAllStructureBlocks(((CompositeBlock) block).getBlocks())) ;
+                    ListOfBlocks.addAll(listOfAllStructureBlocks(((CompositeBlock) block).getBlocks())) ;
             } else ListOfBlocks.add(block);
 
 
@@ -62,17 +69,6 @@ public class Wall implements Structure {
 
 
 
-    public List<Block> findBlocksByMaterialRecursive(List<Block> blocks, String material) {
-        List<Block> result = new ArrayList<>();
-        for (Block block : blocks) {
-            if (block instanceof CompositeBlock) {
-                result.addAll(findBlocksByMaterialRecursive(((CompositeBlock) block).getBlocks(), material));
-            } else {
-                if (block.getMaterial().equals(material)) {
-                    result.add(block);
-                }
-            }
-        }return result;
+
 
     }
-}
