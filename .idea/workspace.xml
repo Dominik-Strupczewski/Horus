@@ -36,41 +36,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.WallTest">
     <configuration name="WallTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="WallTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WallTest.ReturnCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WallTest" />
-      <option name="METHOD_NAME" value="ReturnCount" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WallTest.givenColorThenReturnBlock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WallTest" />
-      <option name="METHOD_NAME" value="givenColorThenReturnBlock" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -85,11 +65,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WallTest.givenValidMaterialThenReturnBLockThisMaterial" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WallTest.givenStructureThenReturnNumberOfElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="WallTest" />
-      <option name="METHOD_NAME" value="givenValidMaterialThenReturnBLockThisMaterial" />
+      <option name="METHOD_NAME" value="givenStructureThenReturnNumberOfElements" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WallTest.givenValidColorThenReturnBlockWithGivenColor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WallTest" />
+      <option name="METHOD_NAME" value="givenValidColorThenReturnBlockWithGivenColor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WallTest.tets" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WallTest" />
+      <option name="METHOD_NAME" value="tets" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -98,10 +98,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.WallTest" />
+        <item itemvalue="JUnit.WallTest.givenStructureThenReturnNumberOfElements" />
         <item itemvalue="JUnit.WallTest.givenInvalidMaterialThenReturnEmptyList" />
-        <item itemvalue="JUnit.WallTest.givenValidMaterialThenReturnBLockThisMaterial" />
-        <item itemvalue="JUnit.WallTest.givenColorThenReturnBlock" />
-        <item itemvalue="JUnit.WallTest.ReturnCount" />
+        <item itemvalue="JUnit.WallTest.givenValidColorThenReturnBlockWithGivenColor" />
+        <item itemvalue="JUnit.WallTest.tets" />
       </list>
     </recent_temporary>
   </component>
@@ -114,6 +114,8 @@
       <option name="presentableId" value="Default" />
       <updated>1677615725831</updated>
       <workItem from="1677615727713" duration="11413000" />
+      <workItem from="1688588733395" duration="6258000" />
+      <workItem from="1688676301992" duration="1419000" />
     </task>
     <task id="LOCAL-00001" summary="All Code">
       <created>1677625311876</created>
@@ -150,5 +152,20 @@
     <MESSAGE value="All Code" />
     <MESSAGE value="UnitTests" />
     <option name="LAST_COMMIT_MESSAGE" value="UnitTests" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/WallTest.java</url>
+          <line>45</line>
+          <properties class="WallTest" method="givenStructureThenReturnNumberOfElements">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

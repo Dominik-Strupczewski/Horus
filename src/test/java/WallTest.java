@@ -18,7 +18,7 @@ public class WallTest {
         Block blok1 = new BlockImp("Red", "Wood");
         Block blok2 = new BlockImp("Black", "coal");
         Block blok3 = new BlockImp("White", "Glass");
-        Block blok4 = new CompositeBlockImp(List.of(new BlockImp("Green", "Grass")));
+        Block blok4 = new CompositeBlockImp(List.of(new BlockImp("Green", "Grass") , new BlockImp("Yellow", "Sand")));
         Block blok5 = new BlockImp("Purple", "Grass") ;
         List<Block> bLocks = List.of(blok1, blok2, blok3, blok4, blok5);
         wall = new Wall(bLocks);
@@ -46,7 +46,7 @@ public class WallTest {
     public void givenStructureThenReturnNumberOfElements() {
 
         int result = wall.count();
-        Assert.assertEquals(5,result);
+        Assert.assertEquals(7,result);
 
 
     }
@@ -58,5 +58,7 @@ public class WallTest {
         Assert.assertEquals("Red",wall.findBlockByColor("Red").get().getColor());
 
     }
+
+
 
 }
